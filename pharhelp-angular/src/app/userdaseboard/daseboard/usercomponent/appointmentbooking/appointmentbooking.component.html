@@ -1,0 +1,56 @@
+<div class="container">
+	<div class="header">
+		<h2>Book Your Appointment</h2>
+	</div>
+    <br>
+    <marquee class="check"> 
+        *Check the Availability of Doctors from Doctor Schedule Page before Booking Medical Appointments* 
+    </marquee>
+	<form class="form" #appbookingForm="ngForm" id="contentToConvert" (ngSubmit)="appointmentbooking(appbookingForm) " (ngSubmit)="captureScreen()">
+        <div class="form-control-9" style="position: relative;top: 10px;">
+            <label class="app" for="Appointment"><b>Username :</b></label>
+            <input style="border: 1px solid;" class="booking-6" type="text" id="userName" name="userName" ngModel></div>
+
+		<div class="form-control-1" style="position: relative;top: 10px;">
+			<label class="app" for="hname"><b>Hospital Name :<select  style="border: 1px solid;" class="booking" id="hname" name="hname"  [ngModel]="selectedhospitals.id" (change)="onselect($event.target)">
+
+                <option value="0">--Select Hospital Name--</option>
+
+                <option  *ngFor="let hos of hospitals?.hospitals" id="hname" name="hname" [value]="hos.hname"  ngModel>{{hos.hname}}</option>
+                </select></b></label></div>
+        <div class="form-control-4" style="position: relative;top: 10px;">
+			<label class="app" for="hname"><b>Doctor Name :<select class="booking-1" id="doctorname" name="doctorname" ngModel>
+
+                <option value="0">--Select Doctor Name--</option>
+
+                <option  *ngFor="let doc of doctor" [value]="doc.name" id="doctorName" name="doctorName" ngModel>{{doc.name}}</option>
+            </select></b></label></div>
+
+        <div class="form-control-5" style="position: relative;top: 10px;">
+			<label class="app" for="hname"><b>Location :<select style="border: 1px solid;" class="booking-2" id="location" name="location" ngModel>
+                <option  value="Select Location" >--Select Location--</option>
+                <option value="Chennai" >Chennai</option>
+            </select></b></label></div>
+
+        <div class="form-control-6" style="position: relative;top: 10px;">
+            <label class="app" for="Appointment"><b>Appointment Date :</b></label>
+            <input style="border: 1px solid;" class="booking-3" type="date" id="appointment" name="appointment" ngModel></div>
+        
+        
+            <div class="form-control-7" style="position: relative;top: 10px;">
+            <label class="app" for="appt"><b>Booking Session :<select style="border: 1px solid;" class="booking-4" id="time" name="time" [ngModel]="selectedslots.id" (change)="onselect1($event.target)">
+                <option value="0">--Select Booking Session--</option>
+                <option  *ngFor="let ses of session?.session" id="time" name="time" [value]="ses.time"  ngModel>{{ses.time}}</option>
+            </select></b></label></div>
+
+            <div class="form-control-8" style="position: relative;top: 10px;">
+                <label class="app" for="appt"><b>Booking Slots :<select style="border: 1px solid;" class="booking-5" id="slots" name="slots" ngModel>
+                    <option value="0" ngModel>--Select Booking Slots--</option>
+                   <option *ngFor="let slot of slots" [value]="slot.time" id="slots" name="slots" ngModel>{{slot.time}}</option>
+                </select></b></label></div>
+
+                <span><input class="button" type="submit"value="Book"></span>
+                <span><input class="button-1" type="submit"value="Cancel"routerLink="/userdaseboard"></span>
+            </form>
+</div>
+

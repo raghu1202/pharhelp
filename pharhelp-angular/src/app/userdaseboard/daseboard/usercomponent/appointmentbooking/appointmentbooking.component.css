@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+
+
+.container { align-self: center;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 900px;
+    height:550px;
+	max-width: 100%;
+    align-items: center;
+    position: relative;
+    top:15px;
+    
+}
+
+.header {
+	background-color: black;
+	padding: 20px 40px;
+    position: relative;
+   text-align: center;
+   position:relative;
+   top:10px;
+   border-radius: 10px;
+}
+
+.header h2 {
+	margin: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-control-1,.form-control-3,.form-control-4,.form-control-5,.form-control-6,.form-control-7,.form-control-8,.form-control-9{
+position: relative;
+top: 30px;
+font-size: 20px;
+padding:7px;
+}
+
+.button{
+    width:100px;
+    height:40px;
+    border: none;
+    outline: none;
+   position: relative;
+    box-sizing:border-box;
+    font-size:15px;
+ top:25px;
+    border-radius:10px;
+    left:310px;
+    }
+
+    .button-1{
+        width:100px;
+        height:40px;
+        border: none;
+        outline: none;
+       position: relative;
+        box-sizing:border-box;
+        font-size:15px;
+     top:25px;
+        border-radius:10px;
+        left:360px;
+        }
+    .button:hover{
+        box-shadow: 2px 2px 2px #555;
+        background-color: rrgba(0,0,0,0.1);
+    }
+    .button-1:hover{
+        box-shadow: 2px 2px 2px #555;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .booking{
+        position:relative;
+        border-radius: 5px;
+        left:70px;
+        width:200px;
+    }
+
+    .booking-0{
+        position:relative;
+        border-radius: 5px;
+        left:80px;
+        width:200px;
+    }
+    .booking-1{
+        position:relative;
+        border-radius: 5px;
+        left:85px;
+        width:200px;
+    }
+
+    .booking-2{
+        position:relative;
+        border-radius: 5px;
+        left:127px;
+        width:200px;
+    }
+.booking-6{
+    position:relative;
+    border-radius: 5px;
+    left:330px;
+    width:200px;
+}
+    .booking-3{
+        position:relative;
+        border-radius: 5px;
+        left:263px;
+        width:200px;
+    }
+    .booking-4{
+        position:relative;
+        border-radius: 5px;
+        left:57px;
+        width:200px;
+    }
+
+    .booking-5{
+        position:relative;
+        border-radius: 5px;
+        left:82px;
+        width:200px;
+    }
+
+   .app{
+        position:relative;
+        left:220px;
+        font-weight: lighter;
+        
+
+    }
+
+    .check{
+        color: black;
+    }

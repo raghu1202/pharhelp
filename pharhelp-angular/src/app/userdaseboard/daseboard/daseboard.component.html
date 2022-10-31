@@ -1,0 +1,21 @@
+<app-header (taggledEvent)="drawer.toggle()"></app-header>
+
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <mat-nav-list role="list">
+            <mat-list-item role="listitem" routerLink="/userdaseboard" ><mat-icon matTooltip="back to home">home</mat-icon>Home</mat-list-item>
+            <mat-list-item role="listitem" routerLink="doctoravailability" matTooltip="view Doctor Availability">Doctor Schedule</mat-list-item>
+            <mat-list-item role="listitem" routerLink="appointmentbooking" matTooltip="make a Appointments">Appointment Booking</mat-list-item>
+            <mat-list-item role="listitem" routerLink="bookinghistory" matTooltip="view your Appointment">Booking History</mat-list-item>
+            
+          </mat-nav-list>
+     
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+        <mat-card class="maincontainer"><mat-card-content>
+            <router-outlet></router-outlet>
+        </mat-card-content></mat-card>
+    </div>
+  
+  </mat-drawer-container>

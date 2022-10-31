@@ -1,0 +1,39 @@
+
+
+<form #bookinghistory="ngForm" (ngSubmit)="history(bookinghistory)">
+  <label>User-Name:<input style="width:300px;border-radius:8px;text-align: center;position: relative;top:-26px;left: 100px;font-size: 15px;" class="form-control" type="text" id="username" name="username"ngModel placeholder="UserName" aria-label="default input example"></label>
+<br>
+<input style="width:100px;height:30px;border-radius:8px;text-align: center;position: relative;top:-26px;left: 100px;font-size: 15px;" class="form-control-1" type="submit" placeholder="Search" value="Search">
+</form>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Username</th>
+        <th scope="col">Hospital Name</th>
+        <th scope="col">Doctor Name</th>
+        <th scope="col">Location</th>
+        <th scope="col">Date</th>
+        <th scope="col">Booking Timing</th>
+        <th scope="col">Booking Slots</th>
+        <th scope="col">Delete</th>
+     
+      
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ad of appointmenthistory">
+        <td>{{ad.userName}}</td>
+        <td>{{ad.hname}}</td>
+        <td>{{ad.doctorname}}</td>
+        <td>{{ad.location}}</td>
+        <td>{{ad.appointment}}</td>
+        <td>{{ad.time}}</td>
+        <td>{{ad.slots}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="deletebookinghis(ad.appid)">Delete</button></td>
+       
+     
+      </tr>
+      
+    </tbody>
+  </table>
+

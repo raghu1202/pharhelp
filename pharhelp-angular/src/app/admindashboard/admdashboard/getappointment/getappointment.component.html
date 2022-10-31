@@ -1,0 +1,29 @@
+<table class="table" style="border: 1px solid;">
+    <thead>
+      <tr>
+        <th scope="col">Username</th>
+        <th scope="col">Hospital Name</th>
+        <th scope="col">Doctor Name</th>
+        <th scope="col">Location</th>
+        <th scope="col">Date</th>
+        <th scope="col">Booking Timing</th>
+        <th scope="col">Booking Slots</th>
+     
+      
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ad of bookinghistory">
+          <td>{{ad.userName}}</td>
+          <td>{{ad.hname}}</td>
+          <td>{{ad.doctorname}}</td>
+          <td>{{ad.location}}</td>
+          <td>{{ad.appointment}}</td>
+          <td>{{ad.time}}</td>
+          <td>{{ad.slots}}</td>
+         
+       
+        </tr>
+        
+      </tbody>
+  </table>

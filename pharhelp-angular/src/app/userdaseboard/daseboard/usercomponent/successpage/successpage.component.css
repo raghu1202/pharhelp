@@ -1,0 +1,8 @@
+.home:hover{
+    width:100px;
+    background-color: rgb(218, 218, 230);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px #555;
+}
+

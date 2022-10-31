@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.hero{
+    background-color: white;
+}
+label{
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+    right:-20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutus{
+    background-image:url(https://g.foolcdn.com/editorial/images/567272/healthcare-workers.jpg);
+    
+    width: 1250px;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    top:40px;
+   left: 10px;
+  
+}
+.aboutus:hover{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),url(https://g.foolcdn.com/editorial/images/567272/healthcare-workers.jpg);
+}
+
+
+.medical{
+    font-size: 25px;
+    position: relative;
+    top: -15px;
+}
+.app{
+    font-size: 18px;
+    color: black;
+    
+}
+.aboutus3{
+    background:linear-gradient( white,rgb(196, 203, 212) );
+    width: 1250px;
+    height: 260px;
+    position: relative;
+    top: 220px;
+}
+p{
+    font-size: 55px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 20%;
+    text-align: left;
+    position: relative;
+    bottom: -50px;
+    color:rgb(218, 218, 230);
+    left: 20px;
+}
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    margin: 0 10px;
+    position: relative;
+    top: 20px;
+    color: black;
+    left:-50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+a.active,a:hover{
+    background-color: rgb(218, 218, 230);
+    border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+.icon{
+    position: relative;
+    bottom:-60px;
+    width: 50px;
+padding: 10px;
+display: inline;
+left:70px;
+}
+
+footer{
+    background: black;
+    color: #fff;
+  
+    padding: 2rem 0;
+    position: relative;
+    top:280px;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+.social-links a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: all 0.5s ease;
+    position: relative;
+    left:310px;
+}
+
+
+
+.social-links a:hover{
+    background: skyblue;
+}
+span{
+    margin-top: 1rem;
+    display: block;
+    letter-spacing: 2;
+    position: relative;
+left: 605px;
+width: 45px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

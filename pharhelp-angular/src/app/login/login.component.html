@@ -1,0 +1,49 @@
+
+  <div class="login">
+    <div class="hero">
+        <nav>
+          <label class="pharhelp">+PharHelp</label>
+          <ul>
+            <li><a class="Home"routerLink=""matTooltip="Home-page">Home</a></li>       
+            <li><a class="about"routerLink="../aboutus"matTooltip="Info about the +PharHelp">About-Us</a></li>       
+            <li><a class="signup" routerLink="../signup"matTooltip="Sign-up to register">Sign-up</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="signin">
+        <div  class="left" >
+        </div>
+        <div class="right">
+          <div class="container">
+            <div class="header">
+            <h1 style="color: black;font-weight: bold;font-style: arial;position: relative">Login</h1>
+         </div>
+         <div class="main">
+         
+         <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+         <span>
+         <input type="text" ngModel name="userName" id="userName" placeholder="Username" style="position: relative;left:6px;" required  >
+         <i class="bi bi-person-circle" style="position: relative;left:-20px;"></i>
+         </span>
+         <br>
+         <span>
+         <input class="password" style="position: relative;left:-9px;" type="password" ngModel name="userPassword" id="userPassword" placeholder="Password" required>
+         <span><input style="width: 15px;height: 15px;position: relative;top:102px;float: left;left:30px;" type="checkbox" id="rememberme" name="rememberme" value="rememberme">
+         <label for="rememberme" style="font-size: 13px;position:relative;top:44px;left:-88px;font-weight: lighter;">Remember Me</label> 
+        </span>
+        </span>
+         <span><input class="login" style="position: relative;top:5px;" type="submit"value="Login"></span>
+         <br>
+         <br>
+         <li><a class="sign" routerLink="../signup" style="color: black;">Create a Account? Sign-up</a></li>       
+         <li><a class="sign" routerLink="../forgotpassword" style="color: black;">ForgotPassword?</a></li> 
+         </form>
+         </div>
+         </div>
+        </div>
+      </div>
+    </div>
+   
+  
+
+   

@@ -1,0 +1,36 @@
+<div class="hero">
+    <nav>
+      <label class="pharhelp">+PharHelp</label>
+      <ul>
+        <li><a class="home" routerLink="" matTooltip="Home-page" >Home</a></li> 
+        <li><a class="about" routerLink="../aboutus"  matTooltip="Info about the +PharHelp" >About-Us</a></li>       
+        <li><a class="signin" routerLink="../login" matTooltip="Sign-in">Sign-in</a></li>    
+        <li><a class="signup" routerLink="../signup" matTooltip="To register">Sign-up</a></li>
+      </ul>
+    </nav>
+</div>
+<div class="container" style="height: 0px;" >
+    <h1 class="feed" style="position: relative;top: -500px;left:400px;font-size: 50px;width: 500px;">Customer Feedback</h1>
+    <form #feedbackForm="ngForm" (ngSubmit)="postfeedback(feedbackForm)">
+        <span >
+        <input class="one" style="position: relative;bottom:480px;width: 600px;height:70px;border-radius:10px;left:315px;border:1px solid" type="text"  placeholder="Name*" id="userName" name="userName" ngModel>
+    </span>
+    <span class="two">
+        <input  class="two" style="position: relative;bottom:400px;width: 290px;height:70px;border-radius:10px;left:-285px;border:1px solid" type="text" placeholder="Email*" id="email" name="email" ngModel>
+    </span>
+    <span class="three">
+        <input class="three" style="position: relative;bottom:480px;width: 290px;height:70px;border-radius:10px;left:625px;border:1px solid"type="text" placeholder="PhoneNumber*" id="phoneNumber" name="phoneNumber" ngModel>
+    </span>
+    <span class="four">
+        <input class="four" style="position: relative;bottom:390px;width: 600px;height:90px;border-radius:10px;left:27px;border:1px solid" type="text" placeholder="Comments*" id="comments" name="comments" ngModel>
+    </span>
+    <span >
+        <input class="button" style="position: relative;bottom:300px;width: 150px;left:-450px;" type="submit" value="Submit">
+    </span>
+    <span class="button1">
+        <input class="button1" style="position: relative;bottom:365px;width: 150px;left: 630px;;" type="submit" value="Cancel">
+    </span>
+    </form>
+</div>
+
+

@@ -1,0 +1,23 @@
+<table class="table" style="border: 1px solid;">
+    <thead>
+      <tr>
+        <th scope="col" class="col" style="width: 200px;">Username</th>
+        <th scope="col" class="col1" style="width: 300px;">Email</th>
+        <th scope="col" class="col2" style="width: 200px;">Phone Number</th>
+        <th scope="col">Comments</th>
+     
+      
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ad of feedbackdetails">
+          <td>{{ad.userName}}</td>
+          <td>{{ad.email}}</td>
+          <td>{{ad.phoneNumber}}</td>
+          <td>{{ad.comments}}</td>
+         
+       
+        </tr>
+        
+      </tbody>
+  </table>

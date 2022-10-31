@@ -1,0 +1,53 @@
+
+    <div class="login">
+      <div class="hero">
+          <nav>
+            <label class="pharhelp">+PharHelp</label>
+            <ul>
+              <li><a class="Home"routerLink=""matTooltip="Home-page">Home</a></li>       
+              <li><a class="about"routerLink="../aboutus"matTooltip="Info about the +PharHelp">About-Us</a></li>       
+              <li><a class="signup" routerLink="../login"matTooltip="Sign-in">Sign-in</a></li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+    <div class="signin">
+      <div  class="left" >
+      </div>
+      <div class="right">
+        <div class="container">
+          <div class="header">
+          <h1 style="color: black;font-weight: bold;font-style: arial">Sign-Up</h1>
+       </div>
+       <div class="main">
+       <form  #signupForm="ngForm" (ngSubmit)="signup(signupForm)">
+        <span>
+          <input type="text" placeholder="First-Name"required id="userFirstName"name="userFirstName" style="position: relative;left:7px;" ngModel>
+          <i class="bi bi-person-circle" style="position: relative;left:-20px;"></i>
+        </span>
+          <span>
+            <input type="text" placeholder="Last-Name"required id="userLastName"name="userLastName" style="position: relative;left:7px;"ngModel>
+            <i class="bi bi-person-circle" style="position: relative;left:-20px;"></i>
+          </span>
+       <span>
+       <input type="text" placeholder="Username"required id="userName" name="userName" style="position: relative;left:7px;" ngModel>
+       <i class="bi bi-person-circle" style="position: relative;left:-20px;"></i>
+      </span>
+       <span>
+        <input type="email" placeholder="Email"required id="email" name="email" style="position: relative;left:7px;" ngModel>
+        <i class="bi bi-envelope-fill" style="position: relative;left:-20px;"></i>
+        </span>
+       <br>
+       <span>
+       <input type="password" placeholder="Password"required id="userPassword" name="userPassword"ngModel >
+       </span>
+       <span>
+        <input type="password" placeholder="Retype-Password"required id="userPassword" name="userPassword"ngModel >
+        </span>
+       <span><input type="submit"value="Submit"></span>
+       <br>
+       </form>
+       </div>
+       </div>
+      </div>
+    </div>

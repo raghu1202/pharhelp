@@ -1,0 +1,23 @@
+.form-control-1:hover{
+    box-shadow: 2px 2px 2px #555;
+        background-color: rrgba(0,0,0,0.1);
+
+}
+
+.form-control-1{
+    border:0px solid;
+}
+
+.table{
+    border: 1px solid;
+}
+
+td{
+    border: 1px solid;
+    text-align: center;
+}
+
+th{
+    border: 1px solid;
+    text-align: center;
+}

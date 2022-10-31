@@ -1,0 +1,24 @@
+
+
+  <table class="table" style="border: 1px solid;">
+    <thead>
+      <tr>
+        <th scope="col">Admin Name</th>
+        <th scope="col">Admin First Name</th>
+        <th scope="col">Admin Last Name</th>
+     
+      
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ad of admindetails">
+        <td>{{ad.userName}}</td>
+        <td>{{ad.userFirstName}}</td>
+        <td>{{ad.userLastName}}</td>
+       
+     
+      </tr>
+      
+    </tbody>
+  </table>
+

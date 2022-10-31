@@ -1,0 +1,245 @@
+{
+    "hospitals":[
+        {
+            "id":1,
+            "hname":"Apollo"
+        },{
+            "id":2,
+            "hname":"Frontline"
+        },{
+        "id":3,
+            "hname":"Newlife"
+    },{
+        "id":4,
+            "hname":"Grace"
+    },{
+        "id":5,
+            "hname":"Angelwalk"
+    }
+    ],
+
+
+
+   "doctors":[
+        {
+            "id":1,
+            "name":"Balaji-General ",
+            "hospitalid":"Apollo"
+        },
+        {
+
+
+
+           "id":2,
+            "name":"Raghu-Cardiologist",
+            "hospitalid":"Apollo"
+        },{
+
+
+
+           "id":3,
+            "name":"Hari-Dietitian",
+            "hospitalid":"Apollo"
+        },{
+
+
+
+           "id":4,
+            "name":"Naveen-Homoeopathy",
+            "hospitalid":"Apollo"
+
+
+
+       },
+     {
+            "id":5,
+            "name":"Jagan-Neurologist",
+            "hospitalid":"Apollo"
+        },
+
+
+
+{
+            "id":6,
+            "name":"Adhithyan-General ",
+            "hospitalid":"Frontline"
+        },
+        {
+
+
+
+           "id":7,
+            "name":"Flemi Gido Dhas-Cardiologist",
+            "hospitalid":"Frontline"
+        },{
+
+
+
+           "id":8,
+            "name":"Sujith-Dietitian",
+            "hospitalid":"Frontline"
+        },{
+
+
+
+           "id":9,
+            "name":"Mohanasundaram-Homoeopathy",
+            "hospitalid":"Frontline"
+
+
+
+       },
+     {
+            "id":10,
+            "name":"Vigneshwaran-Neurologist",
+            "hospitalid":"Frontline"
+        },
+{
+            "id":11,
+            "name":"Vishwa-General ",
+            "hospitalid":"Newlife"
+        },
+        {
+
+
+
+           "id":12,
+            "name":"Sanjith Kumar-Cardiologist",
+            "hospitalid":"Newlife"
+        },{
+
+
+
+           "id":13,
+            "name":"Deepak-Dietitian",
+            "hospitalid":"Newlife"
+        },{
+
+
+
+           "id":14,
+            "name":"Cyril Christopher-Homoeopathy",
+            "hospitalid":"Newlife"
+
+
+
+       },
+     {
+            "id":15,
+            "name":"Prasad-Neurologist",
+            "hospitalid":"Newlife"
+        },
+{
+            "id":11,
+            "name":"Vishwa-General ",
+            "hospitalid":"Newlife"
+        },
+        {
+
+
+
+           "id":12,
+            "name":"Sanjith Kumar-Cardiologist",
+            "hospitalid":"Newlife"
+        },{
+
+
+
+           "id":13,
+            "name":"Deepak-Dietitian",
+            "hospitalid":"Newlife"
+        },{
+
+
+
+           "id":14,
+            "name":"Cyril Christopher-Homoeopathy",
+            "hospitalid":"Newlife"
+
+
+
+       },
+     {
+            "id":15,
+            "name":"Prasad-Neurologist",
+            "hospitalid":"Newlife"
+        },
+{
+            "id":16,
+            "name":"Yogeshwaran-General ",
+            "hospitalid":"Grace"
+        },
+        {
+
+
+
+           "id":17,
+            "name":"Benito Dhas-Cardiologist",
+            "hospitalid":"Grace "
+        },{
+
+
+
+           "id":18,
+            "name":"Bharath-Dietitian",
+            "hospitalid":"Grace"
+        },{
+
+
+
+           "id":19,
+            "name":"Isaac Dev Putra-Homoeopathy",
+            "hospitalid":"Grace"
+
+
+
+       },
+     {
+            "id":20,
+            "name":"Sivasakthi-Neurologist",
+            "hospitalid":"Grace"
+        },
+{
+            "id":21,
+            "name":"Rohith-General ",
+            "hospitalid":"Angelwalk"
+        },
+        {
+
+
+
+           "id":22,
+            "name":"Anjali-Cardiologist",
+            "hospitalid":"Angelwalk"
+        },{
+
+
+
+           "id":23,
+            "name":"Manikandan-Dietitian",
+            "hospitalid":"Angelwalk"
+        },{
+
+
+
+           "id":24,
+            "name":"Mohammed Nuku-Homoeopathy",
+            "hospitalid":"Angelwalk"
+
+
+
+       },
+     {
+            "id":25,
+            "name":"Mathan Kumar-Neurologist",
+            "hospitalid":"Angelwalk"
+        }
+
+
+
+
+    ]
+
+
+
+}

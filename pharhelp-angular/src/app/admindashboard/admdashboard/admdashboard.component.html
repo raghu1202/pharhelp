@@ -1,0 +1,25 @@
+
+<app-admheader (taggledEvent)="drawer.toggle()"></app-admheader>
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+      <mat-nav-list role="list">
+          <mat-list-item role="addhospital" routerLink="addhospital" >Add Hospital</mat-list-item>
+          <mat-list-item role="getHospital" routerLink="getdoctors">Hospital Details</mat-list-item>
+          <mat-list-item role="addadmin" routerLink="addadmin" >Add Admin</mat-list-item>
+          <mat-list-item role="getadmin" routerLink="getadmin">Admin details</mat-list-item>
+          <mat-list-item role="getuser" routerLink="getuser">Login details</mat-list-item>
+          <mat-list-item role="getappointment" routerLink="getappointment">Appointment details</mat-list-item>
+          <mat-list-item role="getfeedback" routerLink="getfeedback">Feedback details</mat-list-item>
+        </mat-nav-list>
+   
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+      <mat-card class="maincontainer"><mat-card-content>
+          <router-outlet></router-outlet>
+      </mat-card-content></mat-card>
+  </div>
+
+</mat-drawer-container>
+

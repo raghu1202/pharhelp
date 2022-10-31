@@ -1,0 +1,26 @@
+
+<table class="table" style="border: 1px solid;">
+    <thead>
+      <tr>
+        <th scope="col">Hospital Name</th>
+        <th scope="col">Location</th>
+        <th scope="col">Doctor Name</th>
+        <th scope="col">Specialisation</th>
+        <th scope="col">Time In</th>
+        <th scope="col">Time Out</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let h of  hospitaldetails">
+        <td scope="row">{{h.hname}}</td>
+        <td>{{h.location}}</td>
+        <td>{{h.name}}</td>
+        <td>{{h.spec}}</td>
+        <td>{{h.in}}</td>
+        <td>{{h.out}}</td>
+        <td><button type="button" class="btn btn-danger" (click)="deleteBooking(h.did)">Delete</button></td>
+      </tr>
+      
+    </tbody>
+  </table>

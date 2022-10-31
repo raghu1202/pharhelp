@@ -1,0 +1,73 @@
+<div>
+ <form #addhospitalForm="ngForm" (ngSubmit)="addhospital(addhospitalForm)"class="row g-3 needs-validation" >
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">Hospital Name</label>
+      <input type="text" class="form-control"required id="hname" name="hname" value=""ngModel >
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Location</label>
+      <input type="text" class="form-control" id="location"  name="location"value="" ngModel required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Doctor Name</label>
+      <input type="text" class="form-control" id="name"  name="name"value="" ngModel required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Specialisation</label>
+      <input type="text" class="form-control" id="spec"  name="spec"value="" ngModel required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Time In</label>
+      <input type="text" class="form-control" id="in"  name="in"value="" ngModel required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Time Out</label>
+      <input type="text" class="form-control" id="out"  name="out"value="" ngModel required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+   
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit" style="background-color: black;">Submit form</button>
+    </div>
+  </form>
+  <br>
+<table class="table" style="border: 1px solid;">
+    <thead>
+      <tr>
+        <th scope="col">Hospital Name</th>
+        <th scope="col">Location</th>
+        <th scope="col">Doctor Name</th>
+        <th scope="col">Specialisation</th>
+        <th scope="col">Time In</th>
+        <th scope="col">Time Out</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let h of  hospitaldetails">
+        <td scope="row">{{h.hname}}</td>
+        <td>{{h.location}}</td>
+        <td>{{h.name}}</td>
+        <td>{{h.spec}}</td>
+        <td>{{h.in}}</td>
+        <td>{{h.out}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
