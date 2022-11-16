@@ -106,7 +106,7 @@ export class AppointmentbookingComponent implements OnInit {
       
       (resp:any)=>{this.router.navigate(['/userdaseboard/successpage'])}
     );
-
+    alert("Appointment Booked Successful")
     
 }
 

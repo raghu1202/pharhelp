@@ -19,6 +19,7 @@ export class FeedbackComponent implements OnInit {
 this.userservice.postfeedback(feedbackForm.value).subscribe(
   (data:any)=>this.router.navigate(['feedbackpage'])
 )
+alert("Feedback Submitted Successful")
+}
+}
 
-}
-}

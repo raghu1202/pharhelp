@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
         alert("Login Successful")
       },
       (error) => {
-        alert("Incorrect Username Or Password");;
+        alert("Incorrect Username Or Password");
       }
     );
     this.userService.userdetails(loginForm.value)

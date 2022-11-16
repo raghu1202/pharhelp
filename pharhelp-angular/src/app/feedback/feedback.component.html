@@ -13,16 +13,16 @@
     <h1 class="feed" style="position: relative;top: -500px;left:400px;font-size: 50px;width: 500px;">Customer Feedback</h1>
     <form #feedbackForm="ngForm" (ngSubmit)="postfeedback(feedbackForm)">
         <span >
-        <input class="one" style="position: relative;bottom:480px;width: 600px;height:70px;border-radius:10px;left:315px;border:1px solid" type="text"  placeholder="Name*" id="userName" name="userName" ngModel>
+        <input class="one" style="position: relative;bottom:480px;width: 600px;height:70px;border-radius:10px;left:315px;border:1px solid" type="text"  placeholder="Name*" id="userName" name="userName" ngModel required="userName">
     </span>
     <span class="two">
-        <input  class="two" style="position: relative;bottom:400px;width: 290px;height:70px;border-radius:10px;left:-285px;border:1px solid" type="text" placeholder="Email*" id="email" name="email" ngModel>
+        <input  class="two" style="position: relative;bottom:400px;width: 290px;height:70px;border-radius:10px;left:-285px;border:1px solid" type="text" placeholder="Email*" id="email" name="email" ngModel required="email">
     </span>
     <span class="three">
-        <input class="three" style="position: relative;bottom:480px;width: 290px;height:70px;border-radius:10px;left:625px;border:1px solid"type="text" placeholder="PhoneNumber*" id="phoneNumber" name="phoneNumber" ngModel>
+        <input class="three" style="position: relative;bottom:480px;width: 290px;height:70px;border-radius:10px;left:625px;border:1px solid"type="text" placeholder="PhoneNumber*" id="phoneNumber" name="phoneNumber" ngModel maxlength="10" required="phoneNumber">
     </span>
     <span class="four">
-        <input class="four" style="position: relative;bottom:390px;width: 600px;height:90px;border-radius:10px;left:27px;border:1px solid" type="text" placeholder="Comments*" id="comments" name="comments" ngModel>
+        <input class="four" style="position: relative;bottom:390px;width: 600px;height:90px;border-radius:10px;left:27px;border:1px solid" type="text" placeholder="Comments*" id="comments" name="comments" ngModel required="phoneNumber">
     </span>
     <span >
         <input class="button" style="position: relative;bottom:300px;width: 150px;left:-450px;" type="submit" value="Submit">

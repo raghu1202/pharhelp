@@ -18,9 +18,11 @@ export class SignupComponent implements OnInit {
     console.log(signupForm.value);
     this.userService.signup(signupForm.value).subscribe(
       (response: any)=>(this.router.navigate(['../registerpage'])
-      
+  
     ))
-
-  }
-
+    alert("Registered Successful")
+  }}
+  (error: any) => {
+    alert("Incorrect Username Or Password");
 }
+
